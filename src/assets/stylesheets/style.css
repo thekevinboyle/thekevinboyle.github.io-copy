@@ -1,0 +1,250 @@
+/*
+The main SCSS file for everything, yep
+ */
+.wrapper, .row {
+  *zoom: 1; }
+  .wrapper:before, .row:before, .wrapper:after, .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after, .row:after {
+    clear: both; }
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin-left: auto;
+  margin-right: auto; }
+
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto; }
+
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+  position: relative;
+  width: 100%; }
+
+[class*='column-'] {
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  min-height: 1px; }
+
+@media only screen and (min-width: 30em) {
+  .wrapper {
+    width: 95%;
+    max-width: 65em; }
+  .column-1 {
+    width: 8.33333%; }
+  .column-2 {
+    width: 16.66667%; }
+  .column-3 {
+    width: 25%; }
+  .column-4 {
+    width: 33.33333%; }
+  .column-5 {
+    width: 41.66667%; }
+  .column-6 {
+    width: 50%; }
+  .column-7 {
+    width: 58.33333%; }
+  .column-8 {
+    width: 66.66667%; }
+  .column-9 {
+    width: 75%; }
+  .column-10 {
+    width: 83.33333%; }
+  .column-11 {
+    width: 91.66667%; }
+  .column-12 {
+    width: 100%; } }
+
+body {
+  background: #FFFFFF;
+  /* border-top: 1rem solid #9f82e0;*/
+  color: #999999;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400; }
+
+a {
+  color: #272727;
+  font-weight: 400;
+  text-decoration: none; }
+
+a:hover {
+  color: #c0c0c0;
+  border-bottom: 4px solid #9f82e0; }
+
+h1 {
+  color: #272727;
+  font-family: 'Karla', sans-serf;
+  font-size: 8.5rem;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-weight: 600; }
+
+h2 {
+  font-family: 'Karla', sans-serf;
+  color: #272727;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-left: 35%;
+  padding-top: .6rem; }
+
+h3 {
+  font-family: 'Karla', sans-serf;
+  color: #272727;
+  font-size: 1.125em;
+  font-weight: 300;
+  margin-bottom: 0.625em;
+  margin-top: 0.625em; }
+
+.header__paragraph {
+  font-size: .9rem;
+  line-height: 1.35rem;
+  min-width: 200px;
+  margin-top: 40px; }
+
+.header__evidence {
+  margin-right: 100px;
+  text-align: left;
+  padding: 0;
+  width: 42.75%; }
+
+.header__email {
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 42.75%; }
+
+.main-nav {
+  margin: 0 10px 40px 0; }
+
+.right {
+  float: right; }
+
+.white {
+  background: white;
+  margin: 10px; }
+
+.header__logo {
+  background-color: red;
+  margin-top: 0px;
+  background: #FFFFFF;
+  height: 200px; }
+
+footer {
+  background: #232323;
+  height: 200px; }
+
+.red {
+  background: #f26451; }
+
+.clear {
+  clear: both; }
+
+.bt {
+  border-top: 2px solid rgba(255, 255, 255, 0.3); }
+
+.bb {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
+
+.mb1 {
+  margin-bottom: 1rem; }
+
+.mb2 {
+  margin-bottom: 2rem; }
+
+.project {
+  background-color: blue;
+  height: 150px; }
+  .project--orange {
+    background-color: orange; }
+  .project--purple {
+    background-color: #9f82e0; }
+  .project--pink {
+    background-color: #f26451; }
+
+.nspace {
+  height: 50px; }
+
+.row {
+  background-color: rgba(255, 255, 255, 0.08); }
+
+.main-nav--height {
+  height: 100px; }
+
+.mast {
+  background-color: #f4f4f4;
+  border: 0;
+  color: #272727;
+  font-family: Serif;
+  font-size: 38px;
+  height: 800px;
+  margin: 0 40px 0 40px;
+  padding: 20px;
+  width: 42%; }
+
+.mast__paragraph {
+  padding: 0 0 20px 0;
+  margin: 0; }
+
+.mast__right__copy {
+  font-size: 24px;
+  line-height: 3rem; }
+
+.mast__copy {
+  font-size: 20px;
+  color: #c0c0c0;
+  line-height: 3rem; }
+
+.mast__right {
+  background-color: #FFFFFF;
+  border-top: 1rem solid red;
+  float: left;
+  color: #272727;
+  font-family: 'Karla';
+  font-size: 38px;
+  height: 800px;
+  margin: 0;
+  padding: 20px;
+  width: 42%; }
+
+/* Pagination Nav */
+.paginate {
+  background-color: #f4f4f4;
+  border-top: 1px solid #c0c0c0;
+  height: 60px;
+  padding-top: 20px;
+  text-align: center; }
+
+.paginate__item {
+  display: inline-block;
+  font-size: 1rem;
+  list-style: none;
+  text-align: center; }
+
+.paginate__item__link {
+  -webkit-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  font-size: 1rem;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-align: center; }
+
+.paginate__item__link:hover {
+  border-bottom: 0;
+  border-top: 1px solid black; }
+
+.active .paginate__item__link {
+  border-top: 1px solid black; }
